@@ -1,0 +1,90 @@
+body{
+	 background-image: url(fond-gris.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 } 
+
+
+
+#div1{
+	position: absolute;
+	top: 2%;
+	right: 35%;
+}
+h1{color: orange;}
+
+
+#div2{
+	position: absolute;
+	top: %;
+	right: 10%;
+}
+#div{
+	padding-bottom: 5%; 
+	border-bottom: green solid ;}
+a {
+		color: green;
+		text-decoration: none;
+}
+
+#i1{
+	position: absolute;
+	top: 43%;
+}
+#i2{
+	position:absolute;
+	left: 10%;
+	top: 35%;
+}
+#i3{
+	position:absolute;
+	left: 19%;
+	top: 35%;
+}
+#i4{
+	position:absolute;
+	left: 30%;
+	top: 33%;
+}
+
+#i5{
+	position: absolute;
+	
+	top: 70%;
+	
+	left: 3%;
+color: blue;
+}
+
+#fiel2{
+	padding: 5px;
+	left: 5%;
+	position:absolute;
+	height: 95%;
+	width: 85%;
+	top: 2.5%;
+}
+
+#fiel{
+
+	top: 5%;
+	left: 15%;
+	position:absolute;
+	height: 96.5%;
+	width: 70%;
+
+}
+#div3{
+		top: 5%;
+	height: 90%;
+	position:absolute;
+
+	width:250%;
+}
+
+#p1{
+left: 80%;
+	position: absolute;top: -2.5%;
+	color:green;
+
+}

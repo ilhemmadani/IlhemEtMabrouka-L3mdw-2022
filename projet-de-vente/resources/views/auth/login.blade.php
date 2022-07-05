@@ -1,0 +1,51 @@
+ 
+<x-guest-layout >
+
+    <x-jet-authentication-card  >
+  
+    <x-slot name="logo">
+    
+        <img src ="assets/img/logo.png"height="100px"width="120px"> 
+        </x-slot>
+
+        <x-jet-validation-errors class="mb-4" />
+
+        @if(session('error'))
+        <span style="color:red"class="text-danger"> {{ session('error')}} </span>
+@endif
+
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
+        
+
+            <div>
+                <x-jet-label for="email" value="{{ __('Email') }}" />
+                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="password" value="{{ __('Mot de passe') }}" />
+                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
+            </div>
+
+            
+
+            <div class="flex items-center justify-end mt-4">
+                @if (Route::has('password.request'))
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                        {{ __('Mot de passe oblièe?') }}
+                    </a>
+                @endif
+
+                <x-jet-button class="ml-4">
+                    {{ __('Connexion') }}
+                </x-jet-button>
+            </div>
+        </form>
+    </x-jet-authentication-card>
+</x-guest-layout>
+<style>
+.a{ background-image:
+    linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+  url('assets/img/1.jpg');}
+  </style>
